@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Otobaido, el camino del motociclista. Programa, comunidad y cultura motera inspirada en el código del camino." />
+    <meta name="theme-color" content="#050505" />
+    <meta property="og:title" content="Otobaido | El camino del motociclista" />
+    <meta property="og:description" content="Programa, comunidad y cultura motera inspirada en el código del camino." />
+    <meta property="og:image" content="assets/images/otobaido-logo-cover.png" />
+    <meta property="og:type" content="website" />
+    <title>Otobaido | El camino del motociclista</title>
+    <link rel="icon" href="assets/images/video-poster.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="brand-mark">大</span>
+        <span class="brand-text">Otobaido</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#camino">El Camino</a>
+        <a href="#video">Video</a>
+        <a href="#programa">Último Programa</a>
+        <a href="#capitulos">Capítulos</a>
+        <a href="#redes">Redes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/images/otobaido-logo-cover.png" alt="" />
+        </div>
+        <div class="hero-content">
+          <p class="kicker">Programa · Comunidad · Cultura motera</p>
+          <h1 id="hero-title">Otobaido</h1>
+          <p class="hero-subtitle">El camino del motociclista.</p>
+          <p class="hero-copy">Una hermandad sobre dos ruedas, donde la ruta, el respeto y la libertad se encuentran con el espíritu del Bushido.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#programa">Ver último programa</a>
+            <a class="btn ghost" href="#video">Ver manifiesto</a>
+            <a class="btn linklike" data-social="instagram" href="#redes">Instagram</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifest section" id="camino" aria-labelledby="camino-title">
+        <div class="section-heading">
+          <p class="kicker">El código</p>
+          <h2 id="camino-title">El Camino</h2>
+        </div>
+        <div class="manifest-grid">
+          <blockquote>
+            “La verdadera ciencia de las artes marciales significa practicarlas de tal forma que sean útiles en cualquier ocasión, y enseñarlas de tal forma que sean útiles en todos los caminos.”
+            <cite>Miyamoto Musashi · El Libro de los Cinco Anillos</cite>
+          </blockquote>
+          <div class="manifest-copy">
+            <p><strong>Otobaido es el camino del motociclista.</strong></p>
+            <p>Una comunidad nacida de la ruta, la amistad, el respeto y la pasión por las dos ruedas.</p>
+            <p>Inspirado en el Bushido, el antiguo código samurái, Otobaido reúne a quienes entienden que andar en moto no es solo moverse: es elegir una forma de vivir.</p>
+            <p>Algunos viajan en clan. Otros son ronin. Pero todos comparten el mismo código.</p>
+            <ul class="values" aria-label="Valores Otobaido">
+              <li>Lealtad</li>
+              <li>Honor</li>
+              <li>Respeto</li>
+              <li>Solidaridad</li>
+              <li>Libertad</li>
+            </ul>
+            <p class="closing-line">Todos siguen el Otobaido.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section section" id="video" aria-labelledby="video-title">
+        <div class="section-heading narrow">
+          <p class="kicker">Manifiesto Otobaido</p>
+          <h2 id="video-title">El origen del camino</h2>
+          <p>Antes que una marca, Otobaido es un código. Algunos viajan en clan. Otros son ronin. Todos siguen el camino.</p>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata" poster="assets/images/video-poster.jpg">
+            <source src="assets/video/otobaido-intro.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+      </section>
+
+      <section class="latest section" id="programa" aria-labelledby="programa-title">
+        <div class="section-heading">
+          <p class="kicker">En vivo</p>
+          <h2 id="programa-title">Último programa</h2>
+        </div>
+        <article class="latest-card" id="latest-card"></article>
+      </section>
+
+      <section class="episodes section" id="capitulos" aria-labelledby="capitulos-title">
+        <div class="section-heading">
+          <p class="kicker">Rutas pasadas</p>
+          <h2 id="capitulos-title">Últimos capítulos</h2>
+        </div>
+        <div class="card-grid" id="episodes-grid"></div>
+      </section>
+
+      <section class="social-posts section" id="redes" aria-labelledby="redes-title">
+        <div class="section-heading">
+          <p class="kicker">La red que más rueda</p>
+          <h2 id="redes-title">Desde Instagram</h2>
+        </div>
+        <div class="card-grid" id="social-grid"></div>
+        <div class="social-links" id="social-links" aria-label="Redes sociales"></div>
+      </section>
+
+      <section class="contact section" id="contacto" aria-labelledby="contacto-title">
+        <div class="contact-panel">
+          <p class="kicker">Boxes abiertos</p>
+          <h2 id="contacto-title">¿Querés sumarte al programa?</h2>
+          <p>Escribinos para invitados, marcas, talleres, eventos o colaboraciones. Si hay historia, ruta o fierro, hay lugar en la mesa.</p>
+          <a class="btn primary" data-contact-link href="#redes">Contactar a Otobaido</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>Otobaido</strong> · El camino del motociclista.</p>
+      <p class="footer-small">© <span id="year"></span> Otobaido. Hecho con tinta, nafta y código.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
