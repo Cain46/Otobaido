@@ -1,21 +1,3 @@
-const videoCard = document.querySelector('[data-youtube-id]');
-
-if (videoCard) {
-  videoCard.addEventListener('click', () => {
-    const youtubeId = videoCard.dataset.youtubeId;
-    const iframe = document.createElement('iframe');
-
-    iframe.className = 'video-embed';
-    iframe.src = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
-    iframe.title = 'Video de Otobaido';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-    iframe.allowFullscreen = true;
-    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-
-    videoCard.replaceWith(iframe);
-  });
-}
-
 const programFeed = document.querySelector('[data-program-feed]');
 
 const escapeHtml = (value) =>
