@@ -25,3 +25,7 @@ Por ahora el JSON contiene datos base/manuales para mantener la estética y no e
 ## Deploy en GitHub Pages
 
 Subir estos archivos a la rama publicada por GitHub Pages. El archivo `.nojekyll` evita procesamiento extra.
+
+
+## Ajuste tipográfico v5.2
+El bloque **Últimos Programas** ahora usa **Bebas Neue** en títulos y labels para evitar problemas de glifos y mejorar la legibilidad. El texto descriptivo conserva la línea serif del módulo **¿Qué es Otobaido?**
