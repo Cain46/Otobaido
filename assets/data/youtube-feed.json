@@ -1,0 +1,35 @@
+[
+  {
+    "type": "live",
+    "badge": "Último Vivo",
+    "section": "Vivos pasados",
+    "title": "Cap. 130 - Corven Bajaj 6 Unidades y otras cositas!",
+    "description": "El último vivo del canal, directo al dojo de la ruta.",
+    "url": "https://www.youtube.com/watch?v=rKacZk8fauw",
+    "thumbnail": "assets/img/programas/ultimo-vivo.jpg",
+    "duration": "1:26:17",
+    "meta": "Stream"
+  },
+  {
+    "type": "video",
+    "badge": "Último Video",
+    "section": "Videos",
+    "title": "Max Willberger - Mitos de la Reprogramación",
+    "description": "Contenido publicado del canal con sello Otobaido.",
+    "url": "https://www.youtube.com/@Otobaido/videos",
+    "thumbnail": "assets/img/programas/ultimo-video.jpg",
+    "duration": "9:20",
+    "meta": "Video"
+  },
+  {
+    "type": "ninja",
+    "badge": "Ninjita",
+    "section": "Playlist",
+    "title": "Ninjita 🏍 - VHS 001 - 21:2X",
+    "description": "Una cápsula ninja del canal, con ruido VHS y motor de fondo.",
+    "url": "https://www.youtube.com/watch?v=o0mF6-LQBu8",
+    "thumbnail": "assets/img/programas/ninjita.jpg",
+    "duration": "2:10",
+    "meta": "Playlist"
+  }
+]
