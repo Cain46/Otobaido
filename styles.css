@@ -67,6 +67,14 @@ body {
     0 14px 32px rgba(0, 0, 0, 0.65);
 }
 
+.video-frame {
+  cursor: default;
+}
+
+.video-frame .video-embed {
+  border-radius: 8px;
+}
+
 .video-card:focus-visible {
   outline: 2px solid #a57a3c;
   outline-offset: 3px;

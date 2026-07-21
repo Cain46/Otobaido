@@ -29,3 +29,7 @@ Subir estos archivos a la rama publicada por GitHub Pages. El archivo `.nojekyll
 
 ## Ajuste tipográfico v5.2
 El bloque **Últimos Programas** ahora usa **Bebas Neue** en títulos y labels para evitar problemas de glifos y mejorar la legibilidad. El texto descriptivo conserva la línea serif del módulo **¿Qué es Otobaido?**
+
+
+## Ajuste v5.3
+El módulo de video principal queda embebido directamente con el video `fepRUErdgLs` y permite pantalla completa desde el player de YouTube. Las cards de Últimos Programas siguen abriendo YouTube en una pestaña nueva.
