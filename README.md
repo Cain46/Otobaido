@@ -43,5 +43,5 @@ El poster del módulo de video vuelve al formato visual previo y ahora redirige 
 El bloque principal de video ahora usa el poster local del samurái, ninja y moto. Al hacer clic en el poster, se reemplaza inline por el reproductor de YouTube dentro de la web usando el enlace de la presentación con subtítulos en español. También se mantiene el botón **Ver en YouTube**.
 
 
-## Ajuste v5.7
-El play del poster ahora usa una función inline (`playOtobaidoIntro`) para evitar fallas por cache del `script.js`. El click reemplaza el poster por un iframe de YouTube dentro del mismo bloque y mantiene el enlace secundario “Ver en YouTube”. Para probar localmente, conviene servir la carpeta con `python -m http.server 8080` y abrir `http://localhost:8080`, en lugar de abrir el HTML con doble click.
+## Ajuste v5.8
+Se movió el ícono de play del poster a la esquina inferior izquierda del bloque de video, al estilo control visual. También se eliminó el botón **Ver en YouTube** del poster y del estado de reproducción embebida para simplificar la interfaz.

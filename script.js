@@ -1,3 +1,28 @@
+const inlineVideoRoot = document.querySelector('[data-inline-video]');
+
+if (inlineVideoRoot) {
+  const posterButton = inlineVideoRoot.querySelector('.video-poster-button');
+
+  const mountInlineVideo = () => {
+    const youtubeId = inlineVideoRoot.dataset.youtubeId;
+    const youtubeUrl = inlineVideoRoot.dataset.youtubeUrl;
+    if (!youtubeId) return;
+
+    inlineVideoRoot.innerHTML = `
+      <iframe
+        class="video-embed"
+        src="https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&playsinline=1&cc_load_policy=1&cc_lang_pref=es"
+        title="Presentación de Otobaido"
+        loading="eager"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>`;
+  };
+
+  posterButton?.addEventListener('click', mountInlineVideo);
+}
+
 const programFeed = document.querySelector('[data-program-feed]');
 
 const escapeHtml = (value) =>
