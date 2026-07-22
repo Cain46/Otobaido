@@ -495,3 +495,22 @@ body {
 .video-card:focus-visible .video-play {
   background: rgba(190, 30, 25, 0.96);
 }
+
+
+#otobaido-video-trigger {
+  position: relative;
+  z-index: 1;
+}
+
+.video-inline .video-poster-button {
+  position: relative;
+}
+
+.video-inline .video-poster-button .video-play {
+  z-index: 2;
+}
+
+.video-inline iframe.video-embed {
+  display: block;
+  width: 100%;
+}

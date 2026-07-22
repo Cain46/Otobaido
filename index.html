@@ -24,14 +24,16 @@
 
     <section class="video-block" aria-label="Video Otobaido">
       <div
+        id="otobaido-video-player"
         class="video-card video-inline"
-        data-inline-video
         data-youtube-id="fepRUErdgLs"
         data-youtube-url="https://youtu.be/fepRUErdgLs?si=nspdMXLD9x5gzM18"
       >
         <button
+          id="otobaido-video-trigger"
           class="video-poster-button"
           type="button"
+          onclick="playOtobaidoIntro(event)"
           aria-label="Reproducir presentación de Otobaido dentro de la web"
         >
           <img
@@ -127,6 +129,52 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script>
+    function playOtobaidoIntro(event) {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+
+      const root = document.getElementById('otobaido-video-player');
+      if (!root) return;
+
+      const youtubeId = root.dataset.youtubeId || 'fepRUErdgLs';
+      const youtubeUrl = root.dataset.youtubeUrl || `https://youtu.be/${youtubeId}`;
+      const params = new URLSearchParams({
+        autoplay: '1',
+        rel: '0',
+        modestbranding: '1',
+        playsinline: '1',
+        cc_load_policy: '1',
+        cc_lang_pref: 'es'
+      });
+
+      if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+        params.set('origin', window.location.origin);
+      }
+
+      root.innerHTML = `
+        <iframe
+          class="video-embed"
+          src="https://www.youtube.com/embed/${youtubeId}?${params.toString()}"
+          title="Presentación de Otobaido"
+          loading="eager"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <a
+          class="video-watch-label"
+          href="${youtubeUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ver video de Otobaido en YouTube con subtítulos en español"
+        >Ver en YouTube</a>
+      `;
+    }
+  </script>
+
+  <script src="script.js?v=5.7"></script>
 </body>
 </html>
