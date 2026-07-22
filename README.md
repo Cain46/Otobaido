@@ -33,3 +33,11 @@ El bloque **Últimos Programas** ahora usa **Bebas Neue** en títulos y labels p
 
 ## Ajuste v5.4
 El módulo de video principal se cambió a una card visual que abre YouTube en pestaña nueva. Esto evita el Error 153 del reproductor embebido en vistas locales o configuraciones donde YouTube bloquea el iframe.
+
+
+## Ajuste v5.5
+El poster del módulo de video vuelve al formato visual previo y ahora redirige al enlace de YouTube solicitado: `https://youtu.be/fepRUErdgLs?si=nspdMXLD9x5gzM18`, donde se conserva el video con subtítulos en español.
+
+
+## Ajuste v5.6
+El bloque principal de video ahora usa el poster local del samurái, ninja y moto. Al hacer clic en el poster, se reemplaza inline por el reproductor de YouTube dentro de la web usando el enlace de la presentación con subtítulos en español. También se mantiene el botón **Ver en YouTube**.

@@ -83,6 +83,84 @@ body {
   outline-offset: 3px;
 }
 
+.video-inline {
+  position: relative;
+}
+
+.video-poster-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.video-poster-button:focus-visible {
+  outline: 2px solid #a57a3c;
+  outline-offset: 3px;
+}
+
+.video-link,
+.video-watch-label {
+  text-decoration: none;
+}
+
+.video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(78px, 11vw, 116px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(220, 63, 48, 0.96), rgba(152, 22, 16, 0.96));
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.48),
+    inset 0 0 0 2px rgba(255, 232, 201, 0.14);
+  pointer-events: none;
+}
+
+.video-play::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-38%, -50%);
+  width: 0;
+  height: 0;
+  border-top: clamp(16px, 2.3vw, 24px) solid transparent;
+  border-bottom: clamp(16px, 2.3vw, 24px) solid transparent;
+  border-left: clamp(26px, 3.5vw, 38px) solid #f7f0e1;
+}
+
+.video-watch-label {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid rgba(201, 150, 75, 0.8);
+  border-radius: 8px;
+  background: rgba(24, 19, 13, 0.88);
+  color: #f1e0bf;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.35);
+}
+
+.video-watch-label:hover,
+.video-watch-label:focus-visible {
+  background: rgba(42, 31, 18, 0.95);
+  border-color: rgba(225, 173, 92, 0.94);
+}
+
+
 .video-embed {
   display: block;
   width: 100%;
