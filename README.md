@@ -45,3 +45,59 @@ El bloque principal de video ahora usa el poster local del samurái, ninja y mot
 
 ## Ajuste v5.8
 Se movió el ícono de play del poster a la esquina inferior izquierda del bloque de video, al estilo control visual. También se eliminó el botón **Ver en YouTube** del poster y del estado de reproducción embebida para simplificar la interfaz.
+
+
+## Ajuste v5.9
+Se agregó el footer **Redes** usando el arte exacto provisto como imagen (`assets/img/redes-footer.png`) y hotspots invisibles sobre cada botón para mantener el diseño idéntico y hacer clickeables Instagram, YouTube, Twitch, Facebook, TikTok y X.
+
+
+## Ajuste v5.10
+El footer de redes fue reconstruido con botones individuales recortados del arte aprobado. Cada imagen funciona como botón clickeable hacia la red oficial de Otobaido. El bloque quedó centrado y un poco más chico.
+
+
+## Ajuste v5.11
+Se redujo un poco más el ancho visual del bloque de redes y el tamaño máximo de cada botón para evitar que queden cortados en los extremos. También se añadió padding lateral interno al footer de redes.
+
+
+## Ajuste v5.12
+El footer de redes ahora usa un layout flex centrado con ancho por botón gobernado por el tamaño real de cada imagen. Ya no se fuerza una grilla de columnas iguales. Los botones se renderizan con altura fija y ancho automático para evitar cortes en los extremos.
+
+
+## Ajuste v5.13
+El footer de redes fue rehecho en piezas limpias: una imagen de título y seis botones individuales normalizados a un mismo canvas de 116x56 px, con separación de 2 px entre botones. Cada botón es su propio enlace clickeable a la red social oficial de Otobaido.
+
+
+## Ajuste v5.14
+Se reinició el footer de redes con enfoque incremental. Se conserva el separador REDES exacto del arte aprobado y se deja solo el botón de Instagram, usando su recorte exacto como botón clickeable.
+
+
+## Ajuste v5.15
+Se agregó el segundo botón del footer de redes: **YouTube**, usando su recorte exacto como botón clickeable y manteniendo el separador REDES aprobado.
+
+
+## Ajuste v5.16
+Se agregó el tercer botón del footer de redes: **Twitch**, usando su recorte exacto como botón clickeable y manteniendo el separador REDES aprobado.
+
+
+## Ajuste v5.17
+Se agregó el cuarto botón del footer de redes: **Facebook**, usando su recorte exacto como botón clickeable y manteniendo el separador REDES aprobado.
+
+
+## Ajuste v5.18
+Se agregó el quinto botón del footer de redes: **TikTok**, usando su recorte exacto como botón clickeable y manteniendo el separador REDES aprobado.
+
+
+## Ajuste v5.19
+Se agregó el sexto y último botón del footer de redes: **X**, usando su recorte exacto como botón clickeable y manteniendo el separador REDES aprobado.
+
+
+## Ajuste v5.20
+Se corrigió el botón de X del footer de redes. Se rehizo el recorte con un ancho mayor para conservar completo el borde derecho y evitar que el ícono se vea cortado.
+
+
+## Ajuste v5.21
+Se corrigió definitivamente el botón de X del footer. El recorte elimina la franja/separador rojo que quedaba pegado desde TikTok y vuelve al tamaño estándar de los botones del footer.
+
+
+## Ajuste v5.22
+Se realizó un microajuste de alineación sobre el botón de X en el footer de redes, desplazándolo apenas 1 px para alinearlo visualmente con el resto de los botones.
